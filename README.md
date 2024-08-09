@@ -28,7 +28,7 @@
 
 ### User Authentication:
 
--   Jetstream’s user authentication system can be extended to support multitenancy by associating users with a specific tenant. For example, each user could have a tenant_id field in the database, linking them to the appropriate tenant.
+-   Jetstream’s user authentication system can be extended to support multitenancy by associating users with a specific tenant. For example, each user could have a **tenant_id** field in the database, linking them to the appropriate tenant.
 
 -   Authentication logic can be adjusted to ensure that users can only log in to their respective tenants.
 
