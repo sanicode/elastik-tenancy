@@ -32,7 +32,7 @@ We would like to extend our thanks to the following sponsors for funding Elastik
 
 ## Contributing
 
-Thank you for considering contributing to the Elastik Tenancy! The contribution guide can be found in the [Laravel Tenancy documentation](https://tenancy.elastik.id/docs/contributions).
+Thank you for considering contributing to the Elastik Tenancy! The contribution guide can be found in the [Elastik Tenancy documentation](https://tenancy.elastik.id/docs/contributions).
 
 ## Code of Conduct
 
@@ -44,4 +44,4 @@ If you discover a security vulnerability within Elastik Tenancy, please send an 
 
 ## License
 
-The Laravel Tenancy is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Elastik Tenancy is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
