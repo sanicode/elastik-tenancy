@@ -5,6 +5,8 @@ declare(strict_types=1);
 use Illuminate\Support\Facades\Route;
 use Stancl\Tenancy\Middleware\InitializeTenancyByDomainOrSubdomain;
 use Stancl\Tenancy\Middleware\PreventAccessFromCentralDomains;
+use Laravel\Jetstream\Http\Controllers\Livewire\TeamController;
+use Laravel\Jetstream\Http\Controllers\Livewire\UserProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,13 +28,12 @@ Route::middleware([
     Route::get('/', function () {
         return view('welcome');
     });
-
-    //return 'This is your multi-tenant application. The id of the current tenant is ' . tenant('id');
     Route::middleware([
         'auth:sanctum',
         config('jetstream.auth_session'),
         'verified',
     ])->group(function () {
+        //route for display dashboard page
         Route::get('/dashboard', function () {
             return view('dashboard');
         })->name('dashboard');

@@ -2,6 +2,7 @@
 
 use Laravel\Jetstream\Features;
 use Laravel\Jetstream\Http\Middleware\AuthenticateSession;
+use Stancl\Tenancy\Middleware\InitializeTenancyByDomainOrSubdomain;
 
 return [
 
@@ -29,7 +30,7 @@ return [
      |
      */
 
-    'middleware' => ['web'],
+    'middleware' => ['web', 'universal', InitializeTenancyByDomainOrSubdomain::class],
 
     'auth_session' => AuthenticateSession::class,
 
