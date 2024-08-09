@@ -32,12 +32,6 @@ Laravel Jetstream is a robust application scaffolding for Laravel, providing ess
 
     -   Authentication logic can be adjusted to ensure that users can only log in to their respective tenants.
 
-### Team Management:
-
-    -   If Jetstream’s team management feature is enabled, teams can be linked to specific tenants. This allows you to manage user roles and permissions within the context of a tenant.
-
-    -   Each team can operate independently within its tenant environment, with isolated data and resources.
-
 ### Database Separation:
 
     -   Depending on your multitenancy approach, you might use a shared database with a tenant_id column to segregate data or multiple databases where each tenant has its own database.
