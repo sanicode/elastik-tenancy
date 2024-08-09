@@ -14,7 +14,7 @@
 
 ## About Elastik Tenancy
 
-Elastik Tenancy is an architectural approach used in Laravel applications to serve multiple tenants (e.g., clients, organizations, or users) from a single codebase while keeping their data isolated. This pattern is useful when you want to create a Software as a Service (SaaS) application where different users or organizations share the same application but require separation of their data and configuration.
+Elastik Tenancy is an architectural approach used in Laravel Jetstream applications to serve multiple tenants (e.g., clients, organizations, or users) from a single codebase while keeping their data isolated. This pattern is useful when you want to create a Software as a Service (SaaS) application where different users or organizations share the same application but require separation of their data and configuration.
 
 ## Learning Elastik Tenancy
 
