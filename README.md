@@ -26,21 +26,21 @@ If you don't feel like reading, [ElastikBlog](https://elastik.com/blog) can help
 
 ## Laravel Tenancy Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel Tenancy development. If you are interested in becoming a sponsor, please visit the [Elastik Tenancy Partners program](https://partners.tenancy.elastik.id).
+We would like to extend our thanks to the following sponsors for funding Elastik Tenancy development. If you are interested in becoming a sponsor, please visit the [Elastik Tenancy Partners program](https://partners.tenancy.elastik.id).
 
 ### Premium Partners
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel Tenancy documentation](https://tenancy.elastik.id/docs/contributions).
+Thank you for considering contributing to the Elastik Tenancy! The contribution guide can be found in the [Laravel Tenancy documentation](https://tenancy.elastik.id/docs/contributions).
 
 ## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://tenancy.elastik.id/docs/contributions#code-of-conduct).
+In order to ensure that the Elastik Tenancy community is welcoming to all, please review and abide by the [Code of Conduct](https://tenancy.elastik.id/docs/contributions#code-of-conduct).
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Sani via [sani@elastik.id](mailto:sani@elastik.id). All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within Elastik Tenancy, please send an e-mail to Sani via [sani@elastik.id](mailto:sani@elastik.id). All security vulnerabilities will be promptly addressed.
 
 ## License
 
