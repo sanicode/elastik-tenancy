@@ -20,30 +20,30 @@ Laravel Jetstream is a robust application scaffolding for Laravel, providing ess
 
 ### Tenant Identification:
 
-    -   **Subdomains**: Each tenant can be identified by a unique subdomain (e.g., tenant1.yourapp.com). Middleware can be used to detect the subdomain and load the appropriate tenant configuration.
+-   **Subdomains**: Each tenant can be identified by a unique subdomain (e.g., tenant1.yourapp.com). Middleware can be used to detect the subdomain and load the appropriate tenant configuration.
 
-    -   **Domains**: Each tenant can have its domain (e.g., tenant1.com), with the application routing requests to the correct tenant based on the domain.
+-   **Domains**: Each tenant can have its domain (e.g., tenant1.com), with the application routing requests to the correct tenant based on the domain.
 
-    -   **Query String or Path**: Tenants can be identified by a unique identifier in the URL path or query string (e.g., yourapp.com/tenant1).
+-   **Query String or Path**: Tenants can be identified by a unique identifier in the URL path or query string (e.g., yourapp.com/tenant1).
 
 ### User Authentication:
 
-    -   Jetstream’s user authentication system can be extended to support multitenancy by associating users with a specific tenant. For example, each user could have a tenant_id field in the database, linking them to the appropriate tenant.
+-   Jetstream’s user authentication system can be extended to support multitenancy by associating users with a specific tenant. For example, each user could have a tenant_id field in the database, linking them to the appropriate tenant.
 
-    -   Authentication logic can be adjusted to ensure that users can only log in to their respective tenants.
+-   Authentication logic can be adjusted to ensure that users can only log in to their respective tenants.
 
 ### Database Separation:
 
-    -   Depending on your multitenancy approach, you might use a shared database with a tenant_id column to segregate data or multiple databases where each tenant has its own database.
-    -   Laravel's database connections can be dynamically configured based on the tenant, ensuring that the correct database is used for each request.
+-   Depending on your multitenancy approach, you might use a shared database with a tenant_id column to segregate data or multiple databases where each tenant has its own database.
+-   Laravel's database connections can be dynamically configured based on the tenant, ensuring that the correct database is used for each request.
 
 ### Middleware:
 
-    -   Custom middleware can be used to identify the current tenant and configure the application accordingly. This includes setting the database connection, loading tenant-specific configurations, and ensuring that authenticated users belong to the correct tenant.
+-   Custom middleware can be used to identify the current tenant and configure the application accordingly. This includes setting the database connection, loading tenant-specific configurations, and ensuring that authenticated users belong to the correct tenant.
 
 ### Routes and Controllers:
 
-    -   Routes can be grouped based on tenants, allowing for tenant-specific functionality within your application. Controllers can be adapted to ensure they handle data in the context of the current tenant.
+-   Routes can be grouped based on tenants, allowing for tenant-specific functionality within your application. Controllers can be adapted to ensure they handle data in the context of the current tenant.
 
 ## Credits
 
