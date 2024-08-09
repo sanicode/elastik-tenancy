@@ -19,7 +19,7 @@ Elastik Tenancy is an architectural approach used in Laravel Jetstream applicati
 ## Credits
 
 -   [Jetstream](https://jetstream.laravel.com/)
--   [Tenancy for laravel](https://tenancyforlaravel.com/)
+-   [Tenancy for Laravel](https://tenancyforlaravel.com/)
 
 ## License
 
