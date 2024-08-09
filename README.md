@@ -45,11 +45,51 @@
 
 -   Routes can be grouped based on tenants, allowing for tenant-specific functionality within your application. Controllers can be adapted to ensure they handle data in the context of the current tenant.
 
-## Credits
 
--   [Jetstream](https://jetstream.laravel.com/)
--   [Tenancy for Laravel](https://tenancyforlaravel.com/)
+## Features
+
+- **Laravel Jetstream**: Provides authentication, registration, email verification, two-factor authentication, session management, API support, and optional team management.
+- **Multi-Tenancy**: Supports tenant identification via subdomains, domains, or path-based routing.
+- **Tenant Data Isolation**: Ensures that each tenant's data is securely separated, using either a shared database with tenant-specific identifiers or multiple databases.
+- **Dynamic Tenant Configuration**: Automatically configures the application based on the current tenant's environment.
+- **Scalability**: Built to handle multiple tenants efficiently while maintaining performance.
+
+## Installation
+
+To get started with this project, follow these steps:
+
+### 1. Clone the Repository
+
+```bash
+git clone git@github.com:sanicode/elastik-tenancy.git
+cd elastik-tenancy
+```
+
+### 2. Alternatif Install with Composer
+```bash
+composer create-project sanicode/elastik-tenancy
+cd elastik-tenancy
+```
+
+
+## Usage
+
+After setting up the project, you can register and log in as a user. Each user will be associated with a specific tenant, and all operations will be tenant-scoped.
+
+## Example Routes:
+- **https://tenant1.yourapp.com/dashboard** - Dashboard for Tenant 1
+- **https://tenant2.yourapp.com/dashboard** - Dashboard for Tenant 2
+
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request or open an Issue.
 
 ## License
 
 The Elastik Tenancy is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Acknowledgements
+-   [Laravel](https://laravel.com/)
+-   [Laravel Jetstream](https://jetstream.laravel.com/)
+-   [Tenancy for Laravel](https://tenancyforlaravel.com/)
