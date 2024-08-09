@@ -20,11 +20,11 @@ Laravel Jetstream is a robust application scaffolding for Laravel, providing ess
 
 ### Tenant Identification:
 
-    -   Subdomains: Each tenant can be identified by a unique subdomain (e.g., tenant1.yourapp.com). Middleware can be used to detect the subdomain and load the appropriate tenant configuration.
+    -   **Subdomains**: Each tenant can be identified by a unique subdomain (e.g., tenant1.yourapp.com). Middleware can be used to detect the subdomain and load the appropriate tenant configuration.
 
-    -   Domains: Each tenant can have its domain (e.g., tenant1.com), with the application routing requests to the correct tenant based on the domain.
+    -   **Domains**: Each tenant can have its domain (e.g., tenant1.com), with the application routing requests to the correct tenant based on the domain.
 
-    -   Query String or Path: Tenants can be identified by a unique identifier in the URL path or query string (e.g., yourapp.com/tenant1).
+    -   **Query String or Path**: Tenants can be identified by a unique identifier in the URL path or query string (e.g., yourapp.com/tenant1).
 
 ### User Authentication:
 
