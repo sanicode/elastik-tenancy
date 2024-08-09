@@ -14,17 +14,17 @@
 
 ## About Elastik Tenancy
 
-Laravel Jetstream is a robust application scaffolding for Laravel, providing essential features such as user authentication, registration, email verification, two-factor authentication, session management, API support via Laravel Sanctum, and optional team management. Elastik Tenancy combined with a multitenancy architecture, Laravel Jetstream can be adapted to serve multiple tenants, each with their isolated data and configurations.
+**Laravel Jetstream** is a robust application scaffolding for Laravel, providing essential features such as user authentication, registration, email verification, two-factor authentication, session management, API support via Laravel Sanctum, and optional team management. **Elastik Tenancy** combined with a multitenancy architecture, Laravel Jetstream can be adapted to serve multiple tenants, each with their isolated data and configurations.
 
 ## Integrating Multitenancy with Laravel Jetstream
 
 ### Tenant Identification:
 
--   **Subdomains**: Each tenant can be identified by a unique subdomain (e.g., tenant1.yourapp.com). Middleware can be used to detect the subdomain and load the appropriate tenant configuration.
+-   **Subdomains**: Each tenant can be identified by a unique subdomain (**e.g., tenant1.yourapp.com**). Middleware can be used to detect the subdomain and load the appropriate tenant configuration.
 
--   **Domains**: Each tenant can have its domain (e.g., tenant1.com), with the application routing requests to the correct tenant based on the domain.
+-   **Domains**: Each tenant can have its domain (**e.g., tenant1.com**), with the application routing requests to the correct tenant based on the domain.
 
--   **Query String or Path**: Tenants can be identified by a unique identifier in the URL path or query string (e.g., yourapp.com/tenant1).
+-   **Query String or Path**: Tenants can be identified by a unique identifier in the URL path or query string (**e.g., yourapp.com/tenant1**).
 
 ### User Authentication:
 
@@ -34,7 +34,7 @@ Laravel Jetstream is a robust application scaffolding for Laravel, providing ess
 
 ### Database Separation:
 
--   Depending on your multitenancy approach, you might use a shared database with a tenant_id column to segregate data or multiple databases where each tenant has its own database.
+-   Depending on your multitenancy approach, you might use a shared database with a **tenant_id** column to segregate data or multiple databases where each tenant has its own database.
 -   Laravel's database connections can be dynamically configured based on the tenant, ensuring that the correct database is used for each request.
 
 ### Middleware:
