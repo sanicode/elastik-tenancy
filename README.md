@@ -46,7 +46,7 @@
 -   Routes can be grouped based on tenants, allowing for tenant-specific functionality within your application. Controllers can be adapted to ensure they handle data in the context of the current tenant.
 
 
-## Features
+## Elastik Tenancy Features
 
 - **Laravel Jetstream**: Provides authentication, registration, email verification, two-factor authentication, session management, API support, and optional team management.
 - **Multi-Tenancy**: Supports tenant identification via subdomains, domains, or path-based routing.
