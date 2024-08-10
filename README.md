@@ -14,7 +14,19 @@
 
 ## About Elastik Tenancy
 
-**Laravel Jetstream** is a robust application scaffolding for Laravel, providing essential features such as user authentication, registration, email verification, two-factor authentication, session management, API support via Laravel Sanctum, and optional team management. **Elastik Tenancy** combined with a multitenancy architecture, Laravel Jetstream can be adapted to serve multiple tenants, each with their isolated data and configurations.
+**Laravel Jetstream** is a robust application scaffolding for Laravel, providing essential features such as user authentication, registration, email verification, two-factor authentication, session management, API support via Laravel Sanctum, and optional team management. **Elastik Tenancy** combined with a TenancyForLaravel (a package by Stancl that provides multi-tenancy support for Laravel applications), allows you to build a powerful, multi-tenant SaaS application with user authentication, team management, and other features provided by Jetstream, all while keeping tenant data and configuration isolated.
+
+## Overview
+- **Laravel Jetstream**: Provides scaffolding for essential features like user authentication, registration, email verification, two-factor authentication, session management, and team management.
+
+- **TenancyForLaravel**: A flexible multi-tenancy package that supports tenant identification, database separation, and tenant-specific configurations.
+
+## Benefits of Combining Jetstream and TenancyForLaravel:
+
+**Scalability**: The combined setup allows you to scale your application to support multiple tenants efficiently.
+Feature-Rich: You get the best of both worlds—Jetstream's user management features and TenancyForLaravel’s robust multi-tenancy support.
+
+**Flexibility**: The architecture can be adapted to various use cases, from small SaaS applications to large enterprise solutions.
 
 ## Integrating Multitenancy with Laravel Jetstream
 
