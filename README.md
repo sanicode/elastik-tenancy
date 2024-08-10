@@ -110,16 +110,22 @@ If you're using subdomains or multiple databases, ensure that your server is con
 ```bash
 php artisan serve
 ```
+### 10. Open your first page in browser
+![Screenshot 2024-08-10 at 12 33 56](https://github.com/user-attachments/assets/185ddc13-93fa-45b1-97e4-d1d20f54fe5e)
 
-Visit your application homepage and you should be good to go 🤘
 
 ## Usage
 
-After setting up the project, you can register new tenant with domain field in register form and log in as a user. Each user domain/subdomain will be associated with a specific tenant, and all operations will be tenant-scoped.
+After setting up the project, you can register new tenant with Domain/Subdomain field in register form and log in as a user. Each user domain/subdomain will be associated with a specific tenant, and all operations will be tenant-scoped. For the basic usage you can input subdomain name without dot[.] added for suffix, for the example : tenant1, tenant2, etc.
+
+![register-page](https://github.com/user-attachments/assets/8e90e621-a986-4bc9-bcdd-7c282f3c49e5)
+
 
 ## Example Routes:
 - **https://tenant1.yourapp.com/dashboard** - Dashboard for Tenant 1
 - **https://tenant2.yourapp.com/dashboard** - Dashboard for Tenant 2
+
+Visit your application homepage and you should be good to go 🤘
 
 
 ## Contributing
