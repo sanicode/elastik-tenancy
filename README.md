@@ -71,7 +71,7 @@ composer create-project sanicode/elastik-tenancy
 cd elastik-tenancy
 ```
 
-### 3. Install requirement package
+### 3. Install Dependencies
 ```bash
 composer update
 ```
