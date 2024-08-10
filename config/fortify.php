@@ -101,7 +101,7 @@ return [
     | these middleware but typically this provided default is preferred.
     |
     */
-
+    //custom middleware for supporting auth with InitializeTenancyByDomainOrSubdomain
     'middleware' => ['web', 'universal', InitializeTenancyByDomainOrSubdomain::class],
 
     /*

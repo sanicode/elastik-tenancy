@@ -30,6 +30,7 @@ return [
      |
      */
 
+     //custom middleware for supporting auth with InitializeTenancyByDomainOrSubdomain
     'middleware' => ['web', 'universal', InitializeTenancyByDomainOrSubdomain::class],
 
     'auth_session' => AuthenticateSession::class,
