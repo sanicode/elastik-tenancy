@@ -123,7 +123,7 @@ If you're using subdomains or multiple databases, ensure that your server is con
 php artisan serve
 ```
 ### 10. Open your first page in browser
-![Screenshot 2024-08-10 at 12 33 56](https://github.com/user-attachments/assets/185ddc13-93fa-45b1-97e4-d1d20f54fe5e)
+[![Screenshot 2024-08-10 at 12 33 56](https://github.com/user-attachments/assets/185ddc13-93fa-45b1-97e4-d1d20f54fe5e)](https://private-user-images.githubusercontent.com/6724789/356792912-4c74d64b-4cc1-4502-8aaf-540258678f04.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjMyNzA5ODIsIm5iZiI6MTcyMzI3MDY4MiwicGF0aCI6Ii82NzI0Nzg5LzM1Njc5MjkxMi00Yzc0ZDY0Yi00Y2MxLTQ1MDItOGFhZi01NDAyNTg2NzhmMDQucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDgxMCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA4MTBUMDYxODAyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9Yzk1YmNjNGUwYTkxMGJkNzA2ZTJiNWE4YmRiMDYxMDhiMzgzMDY2YmFkZjJmY2YxMWRiZTlkMDU5NGUyNTRmYiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.ZWFyt0ZxH6ET30Ef9UgzNk_c_sDSJSeRHXdKWIwrXew)
 
 
 ## Usage
