@@ -48,7 +48,7 @@
 
 ## Elastik Tenancy Features
 
-- **Laravel Jetstream**: Provides authentication, registration, email verification, two-factor authentication, session management, API support, and optional team management.
+- **Laravel Jetstream**: Provides authentication, registration, email verification, two-factor authentication, session management, API support, and optional team management, etc.
 - **Multi-Tenancy**: Supports tenant identification via subdomains, domains, or path-based routing.
 - **Tenant Data Isolation**: Ensures that each tenant's data is securely separated, using either a shared database with tenant-specific identifiers or multiple databases.
 - **Dynamic Tenant Configuration**: Automatically configures the application based on the current tenant's environment.
