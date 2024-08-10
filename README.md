@@ -65,12 +65,53 @@ git clone git@github.com:sanicode/elastik-tenancy.git
 cd elastik-tenancy
 ```
 
-### 2. Alternatif Install with Composer
+### 2. Alternative Install with Composer
 ```bash
 composer create-project sanicode/elastik-tenancy
 cd elastik-tenancy
 ```
 
+### 3. Install requirement package
+```bash
+composer update
+```
+
+### 4. Next, be sure to compile your assets
+```bash
+npm install && npm run build
+```
+
+### 5. Set Up Environtment Variables
+Copy the .env.example file to .env and configure the necessary environment variables, including your database connection and tenant identification method.
+
+```bash
+cp .env.example .env
+```
+
+### 6. Generate Application Key
+
+```bash
+php artisan migrate
+```
+
+> [!IMPORTANT]
+> If you used the Laravel installer and chose `sqlite` as your database, the migrations may have already been run. In which case, you're good to go 🎉 Otherwords you'll need to connect a db and run this command 👇
+
+### 7. Run database migrations
+```
+php artisan migrate
+```
+
+### 8. Configure Tenants
+If you're using subdomains or multiple databases, ensure that your server is configured correctly to handle tenant routing. This might involve setting up wildcard subdomains or configuring additional databases.
+
+### 9. Serve the Application
+
+```bash
+php artisan serve
+```
+
+Visit your application homepage and you should be good to go 🤘
 
 ## Usage
 
