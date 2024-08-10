@@ -13,6 +13,7 @@ use Stancl\Tenancy\Jobs;
 use Stancl\Tenancy\Listeners;
 use Stancl\Tenancy\Middleware;
 use Stancl\Tenancy\Middleware\InitializeTenancyByDomainOrSubdomain;
+use Stancl\Tenancy\Features\UniversalRoutes;
 use Livewire\Livewire;
 
 class TenancyServiceProvider extends ServiceProvider
@@ -103,6 +104,21 @@ class TenancyServiceProvider extends ServiceProvider
     {
         $this->bootEvents();
         $this->mapRoutes();
+
+        \Stancl\Tenancy\Middleware\InitializeTenancyBySubdomain::$onFail = function ($exception, $request, $next) {
+            if (UniversalRoutes::routeHasMiddleware($request->route(), UniversalRoutes::$middlewareGroup)) {
+                return $next($request);
+            }
+            //redirect(config('app.url'));
+            return abort(404, 'We are sorry, but the page you requested was not found'); 
+        };
+        \Stancl\Tenancy\Middleware\InitializeTenancyByDomain::$onFail = function ($exception, $request, $next) {
+            if (UniversalRoutes::routeHasMiddleware($request->route(), UniversalRoutes::$middlewareGroup)) {
+                return $next($request);
+            }
+            //redirect(config('app.url'));
+            return abort(404, 'We are sorry, but the page you requested was not found'); 
+        };
 
         $this->makeTenancyMiddlewareHighestPriority();
         Livewire::setUpdateRoute(function ($handle) {
