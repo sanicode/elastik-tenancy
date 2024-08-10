@@ -115,7 +115,7 @@ Visit your application homepage and you should be good to go 🤘
 
 ## Usage
 
-After setting up the project, you can register and log in as a user. Each user will be associated with a specific tenant, and all operations will be tenant-scoped.
+After setting up the project, you can register new tenant with domain field in register form and log in as a user. Each user domain/subdomain will be associated with a specific tenant, and all operations will be tenant-scoped.
 
 ## Example Routes:
 - **https://tenant1.yourapp.com/dashboard** - Dashboard for Tenant 1
