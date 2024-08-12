@@ -103,7 +103,7 @@ cp .env.example .env
 ### 6. Generate Application Key
 
 ```bash
-php artisan migrate
+php artisan key:generate
 ```
 
 > [!IMPORTANT]
