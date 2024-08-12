@@ -15,11 +15,15 @@ use Stancl\Tenancy\Middleware;
 use Stancl\Tenancy\Middleware\InitializeTenancyByDomainOrSubdomain;
 use Stancl\Tenancy\Features\UniversalRoutes;
 use Livewire\Livewire;
+use App\Jobs\CreateFrameworkDirectoriesForTenant;
+use Stancl\Tenancy\Controllers\TenantAssetsController;
+
 
 class TenancyServiceProvider extends ServiceProvider
 {
     // By default, no namespace is used to support the callable array syntax.
     public static string $controllerNamespace = '';
+
 
     public function events()
     {
@@ -31,6 +35,7 @@ class TenancyServiceProvider extends ServiceProvider
                     Jobs\CreateDatabase::class,
                     Jobs\MigrateDatabase::class,
                     // Jobs\SeedDatabase::class,
+                    CreateFrameworkDirectoriesForTenant::class,
 
                     // Your own jobs to prepare the tenant.
                     // Provision API keys, create S3 buckets, anything you want!
@@ -78,6 +83,7 @@ class TenancyServiceProvider extends ServiceProvider
             Events\EndingTenancy::class => [],
             Events\TenancyEnded::class => [
                 Listeners\RevertToCentralContext::class,
+            
             ],
 
             Events\BootstrappingTenancy::class => [],
@@ -104,6 +110,7 @@ class TenancyServiceProvider extends ServiceProvider
     {
         $this->bootEvents();
         $this->mapRoutes();
+        
 
         \Stancl\Tenancy\Middleware\InitializeTenancyBySubdomain::$onFail = function ($exception, $request, $next) {
             if (UniversalRoutes::routeHasMiddleware($request->route(), UniversalRoutes::$middlewareGroup)) {
@@ -119,6 +126,8 @@ class TenancyServiceProvider extends ServiceProvider
             //redirect(config('app.url'));
             return abort(404, 'We are sorry, but the page you requested was not found'); 
         };
+
+        TenantAssetsController::$tenancyMiddleware = InitializeTenancyByDomainOrSubdomain::class;
 
         $this->makeTenancyMiddlewareHighestPriority();
         Livewire::setUpdateRoute(function ($handle) {

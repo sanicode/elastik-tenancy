@@ -64,4 +64,34 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    /**
+     * @return string
+     */
+    public function getProfilePhotoUrlAttribute()
+    {
+        if($this->profile_photo_path == ''){
+            return $this->defaultProfilePhotoUrl();
+        } else {
+            if(tenant('id') != ''){
+                return asset($this->profile_photo_path);
+            } else {
+                return asset('storage/'.$this->profile_photo_path);
+            }
+        }
+    }
+    
+    /**
+     * @return string
+     */
+    public function defaultProfilePhotoUrl()
+    {
+        return 'https://ui-avatars.com/api/'. implode('/', [
+            //IMPORTANT: Do not change this order
+            urlencode($this->name), // name
+            200, // image size
+            'EBF4FF', // background color
+            '7F9CF5', // font color
+        ]);
+    }
 }
